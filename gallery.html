@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery & Visual Writing | Simran Christy Serrao</title>
+    <meta name="description" content="Visual art, medical illustrations, and reflective writeups on empathy and science by Simran Christy Serrao.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233d2b1f'/><text x='50' y='66' font-size='48' text-anchor='middle' fill='%23f7f4ee' font-family='Helvetica,Arial,sans-serif'>SS</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="index.html">← Back to Portfolio</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Research</a>
+            <a href="gallery.html" class="active-nav">Gallery</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero gallery-hero">
+        <div class="hero-content">
+            <h1>Art &amp; Visual Reflections</h1>
+            <h2>Visualizing Empathy, Biology &amp; Medicine</h2>
+            <p class="hero-affiliation">Bridging Digital Art, Medical Education &amp; Cognitive Science</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Artwork Grid -->
+        <div class="art-grid">
+            
+            <!-- Piece 1: Neural Context & Interpersonal Empathy -->
+            <article class="art-card">
+                <div class="art-media-wrap">
+                    <img src="doodle.png" alt="Neural Context and Interpersonal Empathy doodle by Simran Christy Serrao" class="art-thumbnail">
+                    <button type="button" class="btn-view-art" onclick="openModal('modal-empathy')">
+                        <span>🔍 Click to View Artwork &amp; Story</span>
+                    </button>
+                </div>
+                <div class="art-preview-body">
+                    <h3>Context &amp; Interpersonal Empathy</h3>
+                    <p class="art-tag">Digital Art &bull; Social Psychology &bull; Empathy</p>
+                    <p class="art-teaser">"A single person is the sum total of all their life experiences, environmental exposures, genetic predispositions..."</p>
+                    <button type="button" class="btn btn-outline" onclick="openModal('modal-empathy')">Read Story &amp; View</button>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Modal Popup for Piece 1 -->
+    <div id="modal-empathy" class="art-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-1">
+        <div class="art-modal-backdrop" onclick="closeModal('modal-empathy')"></div>
+        <div class="art-modal-container">
+            <button type="button" class="modal-close-btn" aria-label="Close modal" onclick="closeModal('modal-empathy')">&times;</button>
+            <div class="art-modal-layout">
+                <!-- Artwork Column -->
+                <div class="art-modal-image-col">
+                    <div class="art-frame">
+                        <img src="doodle.png" alt="Context and Interpersonal Empathy">
+                    </div>
+                </div>
+                <!-- Writeup Column -->
+                <div class="art-modal-text-col">
+                    <span class="art-modal-badge">Digital Art &bull; 2026</span>
+                    <h2 id="modal-title-1">Context &amp; Interpersonal Empathy</h2>
+                    <div class="art-modal-essay">
+                        <p>A single person is the sum total of all their life experiences, environmental exposures, genetic predispositions, and many more factors. Due to this, our emotional state at any given point of time is extremely context dependent.</p>
+                        <p>Since life experiences are heavily influenced by the people we interact with, it is necessary to be able to understand other people’s viewpoints in various contexts. Such an ability to imagine how another person is feeling is called empathy.</p>
+                        <p>Given that empathy plays a vital role in pro-social behaviour, it is beneficial to explore whether a person’s empathy can be increased, and if yes, how?</p>
+                    </div>
+                    <div class="art-modal-footer">
+                        <p class="art-author">&mdash; Simran Christy Serrao</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Simran Christy Serrao &bull; <a href="index.html" style="color: #f7d5be; text-decoration: none;">Return to Main Portfolio</a></p>
+    </footer>
+
+    <!-- Modal Interaction Script -->
+    <script>
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevents background scroll
+            }
+        }
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+        // Close on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.art-modal.active').forEach(m => {
+                    m.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

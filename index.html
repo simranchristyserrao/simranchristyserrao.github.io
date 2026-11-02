@@ -9,7 +9,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Simran Christy Serrao | Portfolio">
     <meta property="og:description" content="Computational biology, social network dynamics, and NLP for empathy research.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%235c3a21'/><text x='50' y='66' font-size='48' text-anchor='middle' fill='%23fdfbf7' font-family='Helvetica,Arial,sans-serif'>SS</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233d2b1f'/><text x='50' y='66' font-size='48' text-anchor='middle' fill='%23f7f4ee' font-family='Helvetica,Arial,sans-serif'>SS</text></svg>">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,31 +19,34 @@
             <a href="#experience">Experience</a>
             <a href="#projects">Research</a>
             <a href="#publications">Publications</a>
+            <a href="gallery.html">Gallery</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
 
+    <!-- Clean Centered Hero Header -->
     <header class="hero">
-        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <div class="profile-container">
-                <img src="profile.jpg" alt="Simran Christy Serrao" class="profile-img">
-                
-            </div>
+            <img src="profile.jpg" alt="Simran Christy Serrao" class="profile-img">
             <h1>Simran Christy Serrao</h1>
-            <h2>Computational Psychologist</h2>
-            <p>B.E. Computer Science | M.Sc. Biological Sciences @ BITS Pilani</p>
+            <h2>Computational Social Psychology &amp; Systems Biology</h2>
+            <p class="hero-affiliation">B.E. Computer Science | M.Sc. Biological Sciences @ BITS Pilani</p>
+            <div class="hero-actions">
+                <a href="cv.pdf" target="_blank" rel="noopener" class="btn">View Full CV</a>
+                <a href="mailto:f20220332@goa.bits-pilani.ac.in" class="btn btn-outline">Email Me</a>
+                <a href="https://linkedin.com/in/simran-christy-serrao" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+            </div>
         </div>
     </header>
 
     <main>
         <section id="about">
-            <h3>Education & Background</h3>
-            <p>I am a dual-degree master's candidate at the Birla Institute of Technology and Science (BITS) Pilani, bridging the gap between biological sciences and computer science. My work focuses on computational systems biology, network dynamics, and applying advanced Natural Language Processing (NLP) to psychometric and clinical data.</p>
+            <h3>About Me</h3>
+            <p>I am currently pursuing my Master’s Thesis titled <em>“An Analysis of Social Network Dynamics among Indian STEM Undergraduates: Implications for Targeted Empathy Interventions”</em> at BITS Pilani, KK Birla Goa Campus as a dual major in Computer Science and Biological Sciences.</p>
+            <p>My research interests lie in Social Psychology—I use Natural Language Processing to study social media posts within small-world networks and design targeted empathy interventions. My long-term goal is to help develop empathy interventions that promote prosocial behavior among university students.</p>
+            <p>In my free time, I always look forward to a cup of coffee and a quiet nature walk. I am passionate about Digital art and work part-time as an illustrator for medical education.</p>
             <ul>
-                <li><strong>Cumulative CGPA:</strong> 8.47 / 10</li>
-                <li><strong>In-Major GPA (Biological Sciences):</strong> 9.82 / 10</li>
-                <li><strong>Awards:</strong> Khorana Program for Scholars (Stanford Medicine)</li>
+                <li><strong>Honors &amp; Awards:</strong> Khorana Program for Scholars (Stanford Medicine), Merit Scholarship Recipient (Top 3% at BITS Pilani)</li>
             </ul>
         </section>
 
@@ -63,19 +66,23 @@
             </div>
 
             <div class="project-card">
-                <h4>Field Research Assistant</h4>
-                <p class="date">Unveiling Agency Dynamics of Older Adults | Feb 2024 - May 2024</p>
+                <h4>Unveiling Agency Dynamics of Older Adults</h4>
+                <p class="date">Field Research Assistant | Feb 2024 - May 2024</p>
                 <p>Conducted bilingual (English/Konkani) ethnographic interviews with senior citizens in assisted living facilities. Coordinated fieldwork operations and transcribed qualitative data.</p>
             </div>
         </section>
 
         <section id="projects">
-            <h3>Independent Projects & Thesis</h3>
+            <h3>Independent Projects &amp; Thesis</h3>
             
             <div class="project-card">
-                <h4>Master's Thesis: Social Network Dynamics & Empathy Interventions</h4>
+                <h4>Master's Thesis: Social Network Dynamics &amp; Empathy Interventions</h4>
                 <p class="date">Jun 2026 - Jun 2027</p>
-                <p>Mapping trust networks among STEM undergraduates to identify central network hubs. Developing a custom NLP pipeline for conversational psychometric analysis to design real-time empathy interventions.</p>
+                <ul>
+                    <li>Implemented a computational social psychology pipeline using fine-tuned Transformer-based emotion representations (RoBERTa) and directed network modeling to map peer support dynamics.</li>
+                    <li>Evaluated scale-free topology and tested emotion contagion across career-stress topics.</li>
+                    <li>Investigated empathy cascades in discussion threads to identify how context regulates the expression of peer support.</li>
+                </ul>
             </div>
 
             <div class="project-card">
@@ -94,7 +101,6 @@
         <section id="skills">
             <h3>Technical Skills</h3>
             <p><strong>Data Science/ML:</strong> PyTorch, HuggingFace Transformers, NetworkX, Pandas, NumPy, Scikit-learn</p>
-            <p><strong>Wet Lab Assays:</strong> Mammalian Cell Culture, Nuclei Isolation, MNase-seq Analysis, PCR, Molecular Cloning</p>
             <p><strong>Programming:</strong> Python, Java, C, C++</p>
         </section>
 
@@ -102,14 +108,16 @@
             <h3>Publications</h3>
             <div class="publication-card">
                 <p>Cong, L., Smerkous, D., ... <strong>Serrao, S.</strong>, et al. (2025). <em>LabOS: The AI-XR Co-Scientist That Sees and Works With Humans</em>. arXiv.</p>
-                <a href="https://arxiv.org/abs/2510.14861" target="_blank" rel="noopener" class="btn">View Preprint</a>
+                <a href="https://arxiv.org/abs/2510.14861" target="_blank" rel="noopener" class="btn">View Paper</a>
             </div>
         </section>
 
         <section id="contact">
             <h3>Get in Touch</h3>
+            <p>I am actively applying for Fall 2027 PhD cohorts in Social Psychology, Cognitive Science, and Computational Social Science.</p>
             <div class="contact-links">
-                <a href="mailto:f20220332@goa.bits-pilani.ac.in" class="btn">Email Me</a>
+                <a href="cv.pdf" target="_blank" rel="noopener" class="btn">View Full CV</a>
+                <a href="mailto:f20220332@goa.bits-pilani.ac.in" class="btn btn-outline">Email Me</a>
                 <a href="https://linkedin.com/in/simran-christy-serrao" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
             </div>
         </section>
