@@ -27,7 +27,10 @@
     <!-- Clean Centered Hero Header -->
     <header class="hero">
         <div class="hero-content">
-            <img src="profile.jpg" alt="Simran Christy Serrao" class="profile-img">
+            <div class="profile-img-wrapper">
+                <img src="profile.jpg" alt="Simran Christy Serrao" class="profile-img profile-img-default">
+                <img src="profile2.jpg" alt="Simran Christy Serrao" class="profile-img profile-img-hover" onerror="if(!this.dataset.tried){this.dataset.tried='1';this.src='profile2.png';}else{this.style.display='none';}">
+            </div>
             <h1>Simran Christy Serrao</h1>
             <h2>Computational Social Psychology &amp; Systems Biology</h2>
             <p class="hero-affiliation">B.E. Computer Science | M.Sc. Biological Sciences @ BITS Pilani</p>
