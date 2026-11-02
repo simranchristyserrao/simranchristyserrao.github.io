@@ -1,12 +1,10 @@
-
-
 :root {
-    --bg-color: #111836;        /* Deepest Midnight Navy (#111836) for background */
-    --text-color: #f1f5f9;      /* Crisp light text for dark mode */
-    --primary-color: #4361D9;   /* Bright Electric Blue (#4361D9) for headings & buttons */
-    --accent-color: #374FB0;    /* Vibrant Blue (#374FB0) for highlights & hover */
-    --card-bg: #1C2859;         /* Deep Navy (#1C2859) for project/publication cards */
-    --border-color: #2A3D87;    /* Royal Steel Blue (#2A3D87) for card borders */
+    --bg-color: #f7f4ee;        /* Warm sand / linen background */
+    --text-color: #2b2622;      /* Dark charcoal-brown body text */
+    --primary-color: #3d2b1f;   /* Deep espresso brown for nav, headings & borders */
+    --accent-color: #a45a32;    /* Terracotta / burnt sienna for buttons & links */
+    --card-bg: #ffffff;         /* Clean soft white for cards */
+    --card-border: #e3ded6;     /* Subtle warm border */
 }
 * {
     margin: 0;
