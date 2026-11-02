@@ -1,9 +1,9 @@
 /* Chocolate Kiss (#5c3a21) and Off-White (#fdfbf7) Minimalist Theme */
 
 :root {
-    --bg-color: #fdfbf7;
+    --bg-color: #1C2859;
     --text-color: #333333;
-    --primary-color: #5c3a21; /* Chocolate Kiss */
+    --primary-color: #111836; /* Chocolate Kiss */
     --accent-color: #8c6a51;
     --card-bg: #ffffff;
 }
