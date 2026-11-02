@@ -1,13 +1,13 @@
-/* Chocolate Kiss (#5c3a21) and Off-White (#fdfbf7) Minimalist Theme */
+
 
 :root {
-    --bg-color: #1C2859;
-    --text-color: #333333;
-    --primary-color: #111836; /* Chocolate Kiss */
-    --accent-color: #8c6a51;
-    --card-bg: #ffffff;
+    --bg-color: #111836;        /* Deepest Midnight Navy (#111836) for background */
+    --text-color: #f1f5f9;      /* Crisp light text for dark mode */
+    --primary-color: #4361D9;   /* Bright Electric Blue (#4361D9) for headings & buttons */
+    --accent-color: #374FB0;    /* Vibrant Blue (#374FB0) for highlights & hover */
+    --card-bg: #1C2859;         /* Deep Navy (#1C2859) for project/publication cards */
+    --border-color: #2A3D87;    /* Royal Steel Blue (#2A3D87) for card borders */
 }
-
 * {
     margin: 0;
     padding: 0;
